@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
+
+	<bean class="SetterInjection.Employee" id="SI1">
+		<property name="id">
+			<value>1</value>
+		</property>
+		<property name="name">
+			<value>Vicky</value>
+		</property>
+		<property name="sal">
+			<value>70000</value>
+		</property>
+		<property name="names">
+			<list>
+				<value>J</value>
+				<value>T</value>
+				<value>V</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean class="SetterInjection.Employee" id="SI2">
+		<property name="id" value="2" />
+		<property name="name" value="Dinesh" />
+		<property name="sal" value="77000" />
+
+		<property name="names">
+			<list>
+				<value>K</value>
+				<value>T</value>
+				<value>V</value>
+			</list>
+		</property>
+	</bean>
+</beans>

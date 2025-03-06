@@ -1,0 +1,48 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+
+	<servlet>
+		<servlet-name>add</servlet-name>
+		<servlet-class>qp.AdditionServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>sign_in</servlet-name>
+		<servlet-class>qp.SignInServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>fetch</servlet-name>
+		<servlet-class>qp.FetchDetailsServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>all</servlet-name>
+		<servlet-class>qp.GetAllServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>all</servlet-name>
+		<url-pattern>/Details</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>fetch</servlet-name>
+		<url-pattern>/fetch</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>sign_in</servlet-name>
+		<url-pattern>/signIn</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>add</servlet-name>
+		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+
+</web-app>

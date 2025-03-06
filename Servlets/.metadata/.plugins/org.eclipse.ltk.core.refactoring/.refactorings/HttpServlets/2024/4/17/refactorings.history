@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;HttpServlets/src/main/webapp/http.html&apos; to &apos;httpDemo.html&apos;" description="Rename resource &apos;http.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/http.html" name="httpDemo.html" stamp="1713854462320" updateReferences="true"/>
+</session>

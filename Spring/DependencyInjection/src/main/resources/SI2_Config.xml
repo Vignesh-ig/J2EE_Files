@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
+
+	<bean class="SetterInjection2.IPL" id="ipl1">
+		<property name="tname" value="CSK" />
+		<property name="color" value="yellow" />
+		<property name="captain" value="dhoni" />
+
+		<property name="players">
+			<map>
+				<entry key="8" value="jaddu" ></entry>
+				<entry key="3" value="raina" ></entry>
+				<entry key="42" value="bravo" ></entry>
+				<entry key="34" value="shane watson" ></entry>
+			</map>
+		</property>
+	</bean>
+</beans>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;http&apos; to &apos;httpServlets&apos;" description="Rename resource &apos;http&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/http" name="httpServlets" stamp="1709099939928" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;httpServlets&apos; to &apos;HttpServlets&apos;" description="Rename resource &apos;httpServlets&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/httpServlets" name="HttpServlets" stamp="1709185739900" updateReferences="true"/>
+</session>

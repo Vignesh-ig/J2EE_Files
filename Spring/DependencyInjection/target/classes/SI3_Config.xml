@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <bean class="SetterInjection3.Address" id="a1" p:id="1" p:area="perambur" p:district="chennai" p:state="tamil nadu" p:pincode="600011" />
+    <bean class="SetterInjection3.Person" id="p1" p:id="1" p:name="vicky" p:age="23" p:phone="987654321" p:gender="male" >
+    	<property name="a" ref="a1"></property>
+    </bean>
+    
+    <!-- <bean class="SetterInjection3.Address" id="a1">
+		<property name="id" value="1" />
+		<property name="area" value="perambur" />
+		<property name="district" value="chennai" />
+		<property name="state" value="tamil nadu" />
+		<property name="pincode" value="600011" />
+	</bean>
+	<bean class="SetterInjection3.Person" id="p1">
+		<property name="id" value="1"/>
+		<property name="name" value="vicky"/>
+		<property name="age" value="23"/>
+		<property name="phone" value="987654321"/>
+		<property name="gender" value="male"/>	
+		<property name="a" ref="a1"/>	
+	</bean> -->
+    
+</beans>

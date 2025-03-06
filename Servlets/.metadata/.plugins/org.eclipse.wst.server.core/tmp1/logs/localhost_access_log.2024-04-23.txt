@@ -1,0 +1,6 @@
+127.0.0.1 - - [23/Apr/2024:12:22:01 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [23/Apr/2024:12:22:02 +0530] "GET /Servlet2/SignIn.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [23/Apr/2024:12:22:02 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [23/Apr/2024:12:23:59 +0530] "GET /Servlet2/signIn?name=Vignesh+K&email=vs696422%40gmail.com&pass=dsfvsdfd&contact=9360513265 HTTP/1.1" 200 119
+127.0.0.1 - - [23/Apr/2024:12:25:46 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [23/Apr/2024:12:25:56 +0530] "GET /Servlet2/signIn?name=Vignesh+K&email=vs696422%40gmail.com&pass=sdafdsf&contact=9360513265 HTTP/1.1" 200 118

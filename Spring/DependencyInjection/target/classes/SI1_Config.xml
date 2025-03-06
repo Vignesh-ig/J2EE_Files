@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
+
+
+	<!-- bean/Object 1 -->
+	<bean class="SetterInjection1.Human" id="H1">
+		<property name="id" value="1" />
+		<property name="name" value="Dinesh" />
+		<property name="age" value="22" />
+		<property name="height" value="176cm" />
+		<property name="weight" value="95KG" />
+
+		<property name="friends">
+			<list>
+				<value>Vicky</value>
+				<value>Loki</value>
+				<value>Karthick</value>
+			</list>
+		</property>
+		<property name="lang">
+			<set>
+				<value>Tamil</value>
+				<value>English</value>
+				<value>Telugu</value>
+				<value>Kanada</value>
+			</set>
+		</property>
+	</bean>
+
+	<!-- bean/Object 2 -->
+	<bean class="SetterInjection1.Human" id="H2">
+		<property name="id" value="2" />
+		<property name="name" value="Vignesh" />
+		<property name="age" value="22" />
+		<property name="height" value="169cm" />
+		<property name="weight" value="75KG" />
+
+		<property name="friends">
+			<list>
+				<value>Dinesh</value>
+				<value>Loki</value>
+				<value>Karthick</value>
+			</list>
+		</property>
+		<property name="lang">
+			<set>
+				<value>Tamil</value>
+				<value>English</value>
+				<value>Telugu</value>
+			</set>
+		</property>
+	</bean>
+
+	<!-- bean/Object 3 -->
+	<bean class="SetterInjection1.Human" id="H3">
+		<property name="id" value="3" />
+		<property name="name" value="Dhinakar" />
+		<property name="age" value="22" />
+		<property name="height" value="174cm" />
+		<property name="weight" value="65KG" />
+
+		<property name="friends">
+			<list>
+				<value>Vicky</value>
+				<value>Loki</value>
+				<value>Dinesh</value>
+			</list>
+		</property>
+		<property name="lang">
+			<set>
+				<value>Tamil</value>
+				<value>English</value>
+			</set>
+		</property>
+	</bean>
+
+	<!-- bean/Object 4 -->
+	<bean class="SetterInjection1.Human" id="H4">
+		<property name="id" value="4" />
+		<property name="name" value="Karthick" />
+		<property name="age" value="25" />
+		<property name="height" value="180cm" />
+		<property name="weight" value="95KG" />
+
+		<property name="friends">
+			<list>
+				<value>Aakash</value>
+				<value>Sasi</value>
+				<value>Aslam</value>
+			</list>
+		</property>
+		<property name="lang">
+			<set>
+				<value>Tamil</value>
+				<value>English</value>
+			</set>
+		</property>
+	</bean>
+
+	<!-- bean/Object 5 -->
+	<bean class="SetterInjection1.Human" id="H5">
+		<property name="id" value="5" />
+		<property name="name" value="Akash" />
+		<property name="age" value="22" />
+		<property name="height" value="176cm" />
+		<property name="weight" value="73KG" />
+
+		<property name="friends">
+			<list>
+				<value>Vicky</value>
+				<value>Aslam</value>
+				<value>Karthick</value>
+			</list>
+		</property>
+		<property name="lang">
+			<set>
+				<value>Tamil</value>
+				<value>English</value>
+			</set>
+		</property>
+	</bean>
+
+</beans>

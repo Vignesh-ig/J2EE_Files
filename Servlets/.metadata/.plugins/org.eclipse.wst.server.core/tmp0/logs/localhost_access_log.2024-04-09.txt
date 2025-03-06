@@ -1,0 +1,13 @@
+127.0.0.1 - - [09/Apr/2024:23:21:01 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [09/Apr/2024:23:21:02 +0530] "GET /http/servlet/httpRequest.HttpDemo HTTP/1.1" 404 792
+0:0:0:0:0:0:0:1 - - [09/Apr/2024:23:21:02 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [09/Apr/2024:23:21:58 +0530] "GET /http/http.html HTTP/1.1" 200 206
+0:0:0:0:0:0:0:1 - - [09/Apr/2024:23:22:01 +0530] "POST /http/HttpDemo HTTP/1.1" 404 768
+127.0.0.1 - - [09/Apr/2024:23:22:23 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [09/Apr/2024:23:22:28 +0530] "POST /http/HttpDemo HTTP/1.1" 404 768
+127.0.0.1 - - [09/Apr/2024:23:25:19 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [09/Apr/2024:23:25:19 +0530] "GET /http/servlet/cookies.AddCookies HTTP/1.1" 404 790
+127.0.0.1 - - [09/Apr/2024:23:26:13 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [09/Apr/2024:23:26:14 +0530] "GET /http/servlet/cookies.AddCookies HTTP/1.1" 404 790
+0:0:0:0:0:0:0:1 - - [09/Apr/2024:23:26:17 +0530] "GET /http/servlet/cookies.AddCookies HTTP/1.1" 404 790
+0:0:0:0:0:0:0:1 - - [09/Apr/2024:23:26:18 +0530] "GET /http/servlet/cookies.AddCookies HTTP/1.1" 404 790
