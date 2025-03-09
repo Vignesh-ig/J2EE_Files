@@ -8,7 +8,7 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
-    <bean class="ConstructorInjection1.Employee" id="emp" c:id="1" c:name="tom" c:sal="1500" c:compnay="tcs" c:phone="233456">
+    <bean class="ConstructorInjection1.Employee" id="emp" c:id="1" c:name="tom" c:sal="1500" c:company="tcs" c:phone="233456">
     <constructor-arg name="names">
     <list>
     <value>jack </value>
