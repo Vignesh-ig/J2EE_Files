@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
+
+	 <bean class="ConstructorInjection1.Passenger" id="p1" >
+    	<constructor-arg name="name" ref="Dinesh"></constructor-arg>
+    	<constructor-arg name="gender" value="male"></constructor-arg>
+    	<constructor-arg name="age" value="75"></constructor-arg>
+    </bean>
+
+    <bean class="ConstructorInjection1.Bus" id="b1" >
+    	<constructor-arg name="bid" value="1788"></constructor-arg>
+    	<constructor-arg name="btype" value="MTC Delux"></constructor-arg>
+    	<constructor-arg name="p" ref="p1"></constructor-arg>
+    	<constructor-arg name="btime">
+    		<list> 
+    			<value>8.00 AM</value>
+				<value>8.20 AM</value>
+				<value>9.00 AM</value>
+    		</list>
+    	</constructor-arg>
+    	<constructor-arg name="stops">
+    		<set>
+    			<value>Guindy</value>
+				<value>Perambur</value>
+				<value>Ambattur</value>
+    		</set>
+    	</constructor-arg>
+    	<constructor-arg name="stop">
+    		<map>
+    			<entry key="dinesh" value="thiruvanmaiyur"></entry>
+    		</map>
+    	</constructor-arg>
+    </bean>
+</beans>

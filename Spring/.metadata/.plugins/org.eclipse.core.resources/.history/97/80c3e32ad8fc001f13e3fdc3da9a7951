@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+	<bean class="ConstructorInjection1.Employee" id="emp" c:id="1"
+		c:name="tom" c:sal="1500" c:compnay="tcs" c:phone="233456">
+		<constructor-arg name="names">
+			<list>
+				<value>jack </value>
+				<value>Rose</value>
+				<value>Captain </value>
+			</list>
+		</constructor-arg>
+		<constructor-arg name="empid">
+			<set>
+				<value>1234</value>
+				<value>1235</value>
+				<value>1236</value>
+
+			</set>
+		</constructor-arg>
+		<constructor-arg name="loc">
+			<map>
+				<entry key="1111" value="Amarica"></entry>
+				<entry key="1112" value="Antartica"></entry>
+				<entry key="1113" value="Pakistan"></entry>
+			</map>
+		</constructor-arg>
+	</bean>
+
+
+</beans>
